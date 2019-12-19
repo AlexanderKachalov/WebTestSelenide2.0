@@ -1,4 +1,4 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/mlombgivdcj2m1qq?svg=true)](https://ci.appveyor.com/project/Alexander43884/webtestselenide)
+[![Build status](https://ci.appveyor.com/api/projects/status/mipa5289q8xqla14?svg=true)](https://ci.appveyor.com/project/Alexander43884/webtestselenide2-0)
 
 
 ## Автоматический тест формы "Карта с доставкой"
