@@ -23,7 +23,7 @@ public class TestClass {
         inputNameUser("Василий");
         inputPhoneNumber("+79035783484");
         formClick();
-        $("[data-test-id=notification]").waitUntil(visible, 30000);
+        $("[data-test-id=notification]").waitUntil(visible, 15000);
     }
 
     private void openForm() {
@@ -45,8 +45,7 @@ public class TestClass {
 
     private void inputData (int plusDays) {
         LocalDate dates = LocalDate.now().plusDays(plusDays);
-        String futureDay = DateTimeFormatter.ofLocalizedDate(FormatStyle.SHORT).format(dates);
-//        String futureDay = DateTimeFormatter.ofPattern("dd.MM.yyyy").format(dates);
+        String futureDay = DateTimeFormatter.ofPattern("dd.MM.yyyy").format(dates);
         form.$("[placeholder='Дата встречи']").sendKeys("\b\b\b\b\b\b\b\b\b\b");
 //        form.$("[placeholder='Дата встречи']").sendKeys(Keys.chord(Keys.CONTROL, "a", Keys.DELETE));
         form.$("[placeholder='Дата встречи']").setValue(futureDay).click();
